@@ -8,9 +8,9 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Grayscale - Start Bootstrap Theme
+        title Joakim Kokocha - Portfolio
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon2.ico')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
@@ -34,7 +34,7 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') About
+                            a.nav-link.js-scroll-trigger(href='#about') About me
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#projects') Projects
                         li.nav-item
@@ -46,19 +46,40 @@ html(lang='en')
                 .mx-auto.text-center
                     h1.mx-auto.my-0.text-uppercase Joakim Kokocha
                     h2.text-white.mx-auto.mt-2.mb-5 Engineer and software developer.
-                    a.btn.btn-primary.js-scroll-trigger(href='#about') Take a look at my work!
+                    a.btn.btn-primary.js-scroll-trigger(href='#about') Learn more!
 
         // About
         section#about.about-section.text-center
             .container
                 .row
-                    .col-lg-8.mx-auto
-                        h2.text-white.mb-4 Built with Bootstrap 4
+                    .col-lg-9.mx-auto
+                        h2.text-white.mb-4 Who am I?
                         p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
-                            a(href='https://startbootstrap.com/template-overviews/grayscale/') the preview page
-                            | . The theme is open source, and you can use it for any purpose, personal or commercial.
-                img.img-fluid(src='assets/img/ipad.png', alt='')
+                            | In short, I'm a software developer with a passion for problem solving!
+                            br 
+                            | I strive to use my knowledge of software and IT to make problems simple.
+                        h2.text-white.mb-4 Education
+                        .row
+                            .col-lg-6
+                                h4.text-white-50.mb-2 NTI-Gymnasiet - Information Technology Programme
+                                p.text-white-50 2017 - 2020
+                                h4.text-white-50.mb-2 NTI-Gymnasiet - Software Development Engineer Programme
+                                p.text-white-50 2020 - Now
+                            .col-lg-6
+                                h4.text-white-50.mb-2 Confirmation Youth Leader Education
+                                p.text-white-50 2016 - 2017
+                                h4.text-white-50.mb-2 Student Ambassador Rethorics
+                                p.text-white-50 2017
+
+                        h2.text-white.mb-4 Skills
+                        p.text-white-50
+                            | HTML5, CSS3, Python 3, Bootstrap 4, Less, Javascript, JQuery, Java, Jekyll, Docker, Pug, ExpressJS, Materialize, Raspberry Pi 3 & 4, Debian based Linux, Automated Testing, CI/CD, Code validation, Selenium and Git
+                        //- h2.text-white.mb-4 Built with Bootstrap 4
+                        //- p.text-white-50
+                        //-     | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
+                        //-     a(href='https://startbootstrap.com/template-overviews/grayscale/') the preview page
+                        //-     | . The theme is open source, and you can use it for any purpose, personal or commercial.
+                //- img.img-fluid(src='assets/img/ipad.png', alt='')
 
         // Projects
         section#projects.projects-section.bg-light
@@ -66,16 +87,37 @@ html(lang='en')
                 // Featured Project Row
                 .row.align-items-center.no-gutters.mb-4.mb-lg-5
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/redcross.png', alt='')
+                        a(href="https://github.com/NTI-Gymnasieingenjor/RedCrossAction-Atlantic" target="_blank")
+                            img.img-fluid.mb-3.mb-lg-0(src='assets/img/redcrossregister.png', alt='')
+                            br
+                            br
+                            img.img-fluid.mb-3.mb-lg-0(src='assets/img/redcrosslogincrop.png', alt='')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
                             h4 Mass SMS Service - Swedish Red Cross
                             p.text-black-50.mb-0
-                                | [TEMP]
+                                | This project was a collaboration with the Swedish Red Cross, the goal being to create a simple and easy to use system for communication between the Swedish Red Cross and volunteers during a crisis.
+                                br
+                                br
+                                | The final product utilizes 
+                                a(href="https://46elks.se/" target="_blank") 46elks 
+                                | SMS API, ExpressJS, Javascript and MySQL to let administrators of the Swedish Red Cross send bulk SMS to volonteers containing information about any current crisis and a personalized link where volonteers can send if they can help out during the crisis or not.
+                                br
+                                br
+                                | The product contains secure volonteer registration and administrator login, and was tested automatically using Selenium for Python 3.
+                                br
+                                br
+                                | The webpage uses Pug with the Materialize framework.
+                                br
+                                br
+                                //- | 46elks SMS API, Materialize, Pug, ExpressJS, CSS3, HTML5, Automated Testing (Selenium, Python 3), Javascript, MySQL
+                                a(href="https://github.com/NTI-Gymnasieingenjor/RedCrossAction-Atlantic" target="_blank")
+                                    i.fab.fa-github
+                                    | Check it out on GitHub!
                 // Project One Row
-                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+                .row.align-items-center.justify-content-center.no-gutters.mb-5.mb-lg-0
                     .col-lg-6
-                        a(href="https://fantastic4group.gitlab.io/pizza-website/")
+                        a(href="https://fantastic4group.gitlab.io/pizza-website/" target="_blank")
                             img.img-fluid(src='assets/img/pizzawebsite.png', alt='')
                     .col-lg-6
                         .bg-black.text-center.h-100.project
@@ -83,20 +125,47 @@ html(lang='en')
                                 .project-text.w-100.my-auto.text-center.text-lg-left
                                     h4.text-white Pizza Website
                                     p.mb-0.text-white-50
-                                        | [TEMP]
+                                        | A static website made from scratch with focus on design and a system for automated testing.
+                                        br
+                                        br
+                                        | The webpage uses Jekyll, HTML5 and CSS3 with Less, while the automated testing system was made with Selenium for Python 3 connected to CI/CD on GitLab.
+                                        br
+                                        br
+                                        | Automated tests for every feature were made before each feature was added, including a test that checks if the website works well in all common resolutions using automated screenshots. There's also static validation connected to CI/CD
+                                        //- | HTML5, CSS3, Automated Testing (Selenium, Python 3), CI/CD, Jekyll, Less, Bootstrap
                                     hr.d-none.d-lg-block.mb-0.ml-0
+                                    br
+                                    a(href="https://fantastic4group.gitlab.io/pizza-website/" target="_blank")
+                                        i.fas.fa-desktop
+                                        | Check out the live website!
+                                    br
+                                    a(href="https://gitlab.com/fantastic4group/pizza-website" target="_blank")
+                                        i.fab.fa-gitlab
+                                        | Check it out on GitLab!
+                                    
+                                    
                 // Project Two Row
-                .row.justify-content-center.no-gutters
+                .row.align-items-center.justify-content-center.no-gutters
                     .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='')
+                        a(href="assets/img/lunchpad.gif" target="_blank")
+                            img.img-fluid(src='assets/img/lunchpad.png', alt='')
                     .col-lg-6.order-lg-first
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-right
                                     h4.text-white Lunchpad
                                     p.mb-0.text-white-50
-                                        | [TEMP]
+                                        | Lunchpad was made due to a request by the principal of NTI-Gymnasiet Uppsala. They wanted a system to ensure that students of the school don't cheat their specified lunch times. 
+                                        br
+                                        br
+                                        | Our solution was to use a Raspberry Pi 4 connected to a screen and an NFC scanner at the entrance of the dining area running a Python 3 program. The students are required to scan their keycards, and the screen shows a response depending on if it's currently their time to eat or not.
+                                        //- | Python 3, Raspberry Pi 4, NFC
                                     hr.d-none.d-lg-block.mb-0.mr-0
+                                    br
+                                    a(href="https://github.com/NTI-Gymnasieingenjor/lunchpad" target="_blank")
+                                        i.fab.fa-github 
+                                        | Check it out on GitHub!
+                                    
 
         // Signup
         //- section#signup.signup-section
