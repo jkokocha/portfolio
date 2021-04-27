@@ -1,5 +1,8 @@
 .projects-section {
     padding: 10rem 0;
+    #secondaryProjects {
+        background-color: black;
+    }
     .featured-text {
         padding: 2rem;
         @include media-breakpoint-up(lg) {
@@ -11,12 +14,16 @@
         padding: 3rem;
         font-size: 90%;
         @include media-breakpoint-up(lg) {
-            padding: 4rem;
+            padding: 5rem;
             hr {
                 border-color: $primary;
                 border-width: 0.25rem;
                 width: 30%;
             }
         }
+    }
+    .project-image {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }

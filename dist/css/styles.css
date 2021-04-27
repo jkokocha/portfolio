@@ -10281,6 +10281,9 @@ body {
 .projects-section {
   padding: 10rem 0;
 }
+.projects-section #secondaryProjects {
+  background-color: black;
+}
 .projects-section .featured-text {
   padding: 2rem;
 }
@@ -10296,13 +10299,17 @@ body {
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 4rem;
+    padding: 5rem;
   }
   .projects-section .project-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 30%;
   }
+}
+.projects-section .project-image {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .signup-section {
@@ -10324,9 +10331,6 @@ body {
   border: 0;
 }
 
-.contact-section {
-  padding-top: 5rem;
-}
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
